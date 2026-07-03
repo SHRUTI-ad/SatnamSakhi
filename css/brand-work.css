@@ -1,0 +1,115 @@
+/* Satnam Sakhi — Work page aesthetic */
+
+.page-work .gradient-text {
+  background: linear-gradient(135deg, #9f1239 0%, #ca8a04 50%, #be123c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.page-work .ambient-1 { background: #fecdd3; }
+.page-work .ambient-2 { background: #fde68a; }
+
+.work-hero {
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 0%, rgba(159, 18, 57, 0.1), transparent),
+    radial-gradient(ellipse 60% 50% at 90% 30%, rgba(202, 138, 4, 0.12), transparent),
+    linear-gradient(180deg, #fffbf7 0%, #fef3e8 100%);
+}
+
+.pill-purple { background: rgba(159, 18, 57, 0.12); color: #9f1239; }
+.pill-pink { background: rgba(190, 18, 60, 0.12); color: #be123c; }
+.pill-orange { background: rgba(202, 138, 4, 0.15); color: #a16207; }
+
+.collage-item {
+  border-color: #fff;
+  box-shadow: 0 20px 60px rgba(159, 18, 57, 0.15);
+}
+
+.section-instagram {
+  background: linear-gradient(160deg, #fff1f2 0%, #fef3e8 40%, #fef9c3 100%);
+}
+
+.instagram-grid-wrap {
+  background: linear-gradient(135deg, #9f1239, #ca8a04, #be123c, #047857);
+}
+
+.ig-stat-purple strong { color: #9f1239; }
+.ig-stat-pink strong { color: #be123c; }
+.ig-stat-orange strong { color: #ca8a04; }
+.ig-stat-cyan strong { color: #047857; }
+
+.section-reels {
+  background: linear-gradient(180deg, #1c1917 0%, #292524 100%);
+}
+
+.section-reels .eyebrow { color: #fbbf24; }
+
+.section-reels .gradient-text {
+  background: linear-gradient(135deg, #fbbf24, #fb7185, #fcd34d);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.reel-play { color: #9f1239; }
+
+.video-play {
+  background: linear-gradient(135deg, #9f1239, #ca8a04);
+}
+
+.video-featured-badge {
+  background: linear-gradient(135deg, #9f1239, #ca8a04);
+}
+
+.video-card:hover {
+  box-shadow: 0 24px 60px rgba(159, 18, 57, 0.15);
+}
+
+.photo-card:hover {
+  box-shadow: 0 20px 50px rgba(202, 138, 4, 0.18);
+}
+
+.photo-zoom { color: #9f1239; }
+
+.cta-vibrant {
+  background: linear-gradient(135deg, #9f1239 0%, #be123c 40%, #ca8a04 100%);
+}
+
+.cta-vibrant .btn-primary {
+  color: #9f1239;
+}
+
+.instagram-views {
+  background: rgba(159, 18, 57, 0.82);
+}
+
+.instagram-post:hover {
+  border-color: #ca8a04;
+}
+
+/* Instagram embed strip */
+.insta-embed-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.insta-embed-bar p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.insta-handle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}

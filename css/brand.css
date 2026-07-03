@@ -1,0 +1,74 @@
+/* Satnam Sakhi — Brand theme overrides */
+
+:root {
+  --bg: #fffbf7;
+  --bg-elevated: #ffffff;
+  --bg-muted: #fef3e8;
+  --surface: #ffffff;
+  --border: rgba(127, 29, 29, 0.1);
+  --text: #1c1917;
+  --text-muted: #57534e;
+
+  --accent: #9f1239;
+  --accent-2: #d97706;
+  --accent-3: #047857;
+  --accent-dim: rgba(159, 18, 57, 0.1);
+  --accent-glow: rgba(159, 18, 57, 0.28);
+  --rose: #be123c;
+  --gold: #ca8a04;
+  --gold-light: #fef9c3;
+}
+
+.logo span { color: var(--gold); }
+
+.btn-primary {
+  background: linear-gradient(135deg, #9f1239, #be123c);
+  box-shadow: 0 4px 24px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #881337, #9f1239);
+}
+
+.eyebrow { color: var(--accent); }
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(202, 138, 4, 0.14), transparent),
+    radial-gradient(ellipse 50% 40% at 10% 80%, rgba(159, 18, 57, 0.08), transparent),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-muted) 100%);
+}
+
+.hero-title em { color: var(--accent); }
+
+.link-arrow { color: var(--accent); }
+
+.service-card:hover {
+  border-color: rgba(159, 18, 57, 0.3);
+  box-shadow: 0 12px 40px rgba(159, 18, 57, 0.08);
+}
+
+.event-card-body .date { color: var(--accent); }
+.event-badge.category { color: var(--gold); border-color: var(--gold); }
+
+.section-dark { background: linear-gradient(180deg, #fef3e8 0%, #fff7ed 100%); }
+
+.cta-banner {
+  background:
+    radial-gradient(ellipse 60% 80% at 50% 100%, rgba(202, 138, 4, 0.12), transparent),
+    var(--bg-muted);
+}
+
+.contact-detail strong { color: var(--accent); }
+
+.brand-logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.brand-logo span { color: var(--gold); font-style: italic; }
+
+.brand-headline {
+  font-family: "Playfair Display", Georgia, serif;
+}

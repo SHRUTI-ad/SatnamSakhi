@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work | Satnam Sakhi Event Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/brand.css" />
+  <link rel="stylesheet" href="css/work.css" />
+  <link rel="stylesheet" href="css/brand-work.css" />
+</head>
+<body class="page-work">
+  <div class="ambient ambient-1" aria-hidden="true"></div>
+  <div class="ambient ambient-2" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo brand-logo">Satnam<span>Sakhi</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="work.html" class="active">Our Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-sm">Book Event</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="work-hero">
+      <div class="container work-hero-grid">
+        <div class="work-hero-copy">
+          <p class="eyebrow reveal">Event Management · Content</p>
+          <h1 class="reveal brand-headline">
+            Celebrations captured.<br />
+            <span class="gradient-text">Memories amplified.</span>
+          </h1>
+          <p class="work-hero-sub reveal">
+            From weddings and corporate events to social celebrations — we plan unforgettable experiences
+            and create reels, photos & videos your audience loves on Instagram.
+          </p>
+          <div class="work-hero-pills reveal">
+            <span class="pill pill-purple">Weddings</span>
+            <span class="pill pill-pink">Corporate</span>
+            <span class="pill pill-orange">Social Events</span>
+          </div>
+          <div class="work-hero-actions reveal">
+            <a href="#reels" class="btn btn-primary">Watch Reels</a>
+            <a href="https://www.instagram.com/satnamsakhieventmanagement/" class="btn btn-ghost" target="_blank" rel="noopener">@satnamsakhieventmanagement</a>
+          </div>
+        </div>
+        <div class="work-hero-visual reveal" id="hero-collage"></div>
+      </div>
+    </section>
+
+    <section class="section section-instagram" id="instagram">
+      <div class="container">
+        <div class="instagram-layout reveal">
+          <div class="instagram-info glass-card">
+            <p class="eyebrow eyebrow-pink">Instagram</p>
+            <h2>Follow our <span class="gradient-text">event journey</span></h2>
+            <p class="instagram-desc">
+              See our latest reels, event highlights, and behind-the-scenes content —
+              update follower & view counts in <code>js/data.js</code> with your real stats.
+            </p>
+            <div class="instagram-stats" id="instagram-stats"></div>
+            <a href="https://www.instagram.com/satnamsakhieventmanagement/" class="btn btn-instagram" id="instagram-follow" target="_blank" rel="noopener">
+              Follow on Instagram
+            </a>
+            <div class="insta-embed-bar">
+              <p>Live profile →</p>
+              <a href="https://www.instagram.com/satnamsakhieventmanagement/" class="insta-handle" target="_blank" rel="noopener">@satnamsakhieventmanagement</a>
+            </div>
+          </div>
+          <div class="instagram-grid-wrap">
+            <div class="instagram-grid" id="instagram-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reels" id="reels">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-cyan">Reels</p>
+          <h2>Event energy in <span class="gradient-text">every frame</span></h2>
+          <p class="section-sub section-sub-light">Add reel thumbnails to <strong>images/</strong> and videos to <strong>videos/</strong></p>
+        </div>
+      </div>
+      <div class="marquee-wrap reveal">
+        <div class="marquee" id="reels-marquee"></div>
+      </div>
+    </section>
+
+    <section class="section section-videos" id="videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Event Films</p>
+          <h2>Recap videos that <span class="gradient-text">tell your story</span></h2>
+        </div>
+        <div class="videos-grid reveal-stagger" id="videos-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-photos" id="photos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-orange">Gallery</p>
+          <h2>Events we've <span class="gradient-text">brought to life</span></h2>
+        </div>
+        <div class="photos-bento reveal-stagger" id="photos-grid"></div>
+      </div>
+    </section>
+
+    <section class="cta-banner cta-vibrant">
+      <div class="container cta-inner reveal">
+        <h2>Planning a wedding, corporate event, or celebration?</h2>
+        <p>Let's create something beautiful — and content that gets views.</p>
+        <a href="contact.html" class="btn btn-primary btn-glow">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="media-modal" id="media-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <video class="modal-video" controls playsinline></video>
+      <img class="modal-image" alt="" style="display:none" />
+      <p class="modal-title"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo brand-logo">Satnam<span>Sakhi</span></a>
+        <p class="footer-tagline">Event Management · Weddings · Corporate · Social</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/satnamsakhieventmanagement/" id="footer-instagram" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="contact.html">WhatsApp</a></li>
+          <li><a href="contact.html">Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Satnam Sakhi Event Management</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    renderHeroCollage("hero-collage");
+    renderInstagramSection();
+    renderReelsMarquee("reels-marquee");
+    renderVideos("videos-grid");
+    renderPhotos("photos-grid");
+  </script>
+</body>
+</html>
